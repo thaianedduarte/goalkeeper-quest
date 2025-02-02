@@ -1,9 +1,15 @@
 import { GlassCard } from "@/components/ui/glass-card";
 import { Progress } from "@/components/ui/progress";
+import { useNavigate } from "react-router-dom";
 
 export function CampaignCard() {
+  const navigate = useNavigate();
+
   return (
-    <GlassCard className="w-full p-6 animate-scale-in">
+    <GlassCard 
+      className="w-full p-6 animate-scale-in cursor-pointer hover:opacity-90 transition-opacity"
+      onClick={() => navigate("/campaign")}
+    >
       <div className="flex justify-between items-start mb-4">
         <div>
           <h3 className="text-lg font-medium text-foreground">Current Campaign</h3>
