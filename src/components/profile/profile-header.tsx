@@ -1,6 +1,7 @@
 import { Avatar } from "@/components/ui/avatar";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Settings, Share2 } from "lucide-react";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 export function ProfileHeader() {
   return (
@@ -12,16 +13,17 @@ export function ProfileHeader() {
       </Avatar>
       
       <GlassCard className="px-8 py-4">
-        <h2 className="text-2xl font-medium text-white/90">Total Saved</h2>
-        <p className="text-4xl font-bold text-white mt-2">R$ 0.00</p>
+        <h2 className="text-2xl font-medium text-foreground">Total Saved</h2>
+        <p className="text-4xl font-bold text-foreground mt-2">R$ 0.00</p>
       </GlassCard>
 
       <div className="flex space-x-4">
-        <button className="p-4 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10">
-          <Settings className="w-6 h-6 text-white/80" />
+        <button className="p-4 rounded-full bg-background hover:bg-muted transition-colors border border-border">
+          <Settings className="w-6 h-6 text-foreground" />
         </button>
-        <button className="p-4 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10">
-          <Share2 className="w-6 h-6 text-white/80" />
+        <ThemeToggle />
+        <button className="p-4 rounded-full bg-background hover:bg-muted transition-colors border border-border">
+          <Share2 className="w-6 h-6 text-foreground" />
         </button>
       </div>
     </div>

@@ -8,7 +8,7 @@ export function PageContainer({
   return (
     <div
       className={cn(
-        "min-h-screen w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900",
+        "min-h-screen w-full bg-gradient-to-br from-background via-muted to-background",
         "p-6 md:p-8 flex flex-col items-center",
         className
       )}
