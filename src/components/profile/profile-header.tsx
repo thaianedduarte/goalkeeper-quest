@@ -6,8 +6,8 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 export function ProfileHeader() {
   return (
     <div className="w-full flex flex-col items-center space-y-6 animate-fade-in">
-      <Avatar className="w-24 h-24 border-2 border-white/20">
-        <div className="w-full h-full bg-gradient-to-br from-primary/80 to-accent/80 flex items-center justify-center text-2xl font-semibold text-white">
+      <Avatar className="w-24 h-24 border-2 border-border">
+        <div className="w-full h-full bg-gradient-to-br from-primary/80 to-accent/80 flex items-center justify-center text-2xl font-semibold text-primary-foreground">
           MQ
         </div>
       </Avatar>
